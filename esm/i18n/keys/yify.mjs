@@ -1,0 +1,17 @@
+export const warning = "yify:warning";
+export const powered_by = "yify:powered_by";
+export const connections = "yify:connections";
+export const search_placeholder = "yify:search_placeholder";
+export const search_label = "yify:search_label";
+export const title_required = "yify:title_required";
+export const new_releases = "yify:new_releases";
+export const rating = "yify:rating";
+export const runtime = "yify:runtime";
+export const results = "yify:results";
+export const results_one = "yify:results_one";
+export const links_title = "yify:links_title";
+export const runtime_title = "yify:runtime_title";
+export const genre_title = "yify:genre_title";
+export const rating_title = "yify:rating_title";
+export const mpaa_title = "yify:mpaa_title";
+export default { warning, powered_by, connections, search_placeholder, search_label, title_required, new_releases, rating, runtime, results, results_one, links_title, runtime_title, genre_title, rating_title, mpaa_title };

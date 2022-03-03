@@ -1,0 +1,66 @@
+{
+    "name": "@noahtkeller/common-strings",
+    "description": "The strings-source repository compiled for use within NodeJS ecosystem. Provides ESM and CJS bundles.",
+    "version": "0.1.1",
+    "scripts": {
+        "build": "SOURCES_DIR=../strings-source/src gulp",
+        "clean": "gulp clean"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahtkeller/node-common-strings.git"
+    },
+    "homepage": "https://github.com/noahtkeller/node-common-strings",
+    "bugs": "https://github.com/noahtkeller/node-common-strings/issues",
+    "author": {
+        "name": "Noah Keller",
+        "email": "noahtkeller@gmail.com",
+        "url": "https://noahtkeller.github.io/"
+    },
+    "type": "module",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "mkdirp": "^1.0.4",
+        "rimraf": "^3.0.2",
+        "yaml": "^1.10.2"
+    },
+    "exports": {
+        ".": {
+            "require": "./cjs/index.js",
+            "import": "./esm/index.mjs"
+        },
+        "./config": {
+            "require": "./cjs/config.js",
+            "import": "./esm/config.mjs"
+        },
+        "./config/secrets": {
+            "require": "./cjs/config/secrets.js",
+            "import": "./esm/config/secrets.mjs"
+        },
+        "./icon_sources": {
+            "require": "./cjs/icon_sources.js",
+            "import": "./esm/icon_sources.mjs"
+        },
+        "./system": {
+            "require": "./cjs/system.js",
+            "import": "./esm/system.mjs"
+        },
+        "./i18n/keys": {
+            "require": "./cjs/i18n/keys.js",
+            "import": "./esm/i18n/keys.mjs"
+        },
+        "./i18n/keys/*": {
+            "require": "./cjs/i18n/keys/*.js",
+            "import": "./esm/i18n/keys/*.mjs"
+        },
+        "./i18n/bundles": {
+            "require": "./cjs/i18n/bundles.js",
+            "import": "./esm/i18n/bundles.mjs"
+        },
+        "./i18n/bundles/*": {
+            "require": "./cjs/i18n/bundles/*.js",
+            "import": "./esm/i18n/bundles/*.mjs"
+        }
+    }
+}

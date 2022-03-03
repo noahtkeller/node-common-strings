@@ -1,0 +1,16 @@
+module.exports.warning = "yify:warning";
+module.exports.powered_by = "yify:powered_by";
+module.exports.connections = "yify:connections";
+module.exports.search_placeholder = "yify:search_placeholder";
+module.exports.search_label = "yify:search_label";
+module.exports.title_required = "yify:title_required";
+module.exports.new_releases = "yify:new_releases";
+module.exports.rating = "yify:rating";
+module.exports.runtime = "yify:runtime";
+module.exports.results = "yify:results";
+module.exports.results_one = "yify:results_one";
+module.exports.links_title = "yify:links_title";
+module.exports.runtime_title = "yify:runtime_title";
+module.exports.genre_title = "yify:genre_title";
+module.exports.rating_title = "yify:rating_title";
+module.exports.mpaa_title = "yify:mpaa_title";

@@ -1,0 +1,38 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7.0
+  slack: circleci/slack@4.8.3
+
+parameters:
+  msg:
+    type: string
+    default: "Merge sources"
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:16.13.1
+    environment:
+      MSG: << pipeline.parameters.msg >>
+    steps:
+      - run: git config --global user.email "noahtkeller+gh-deploy@gmail.com"
+      - run: git config --global user.name "GitHub Deployer"
+      - add_ssh_keys:
+          fingerprints:
+            - 86:ae:c5:92:80:ed:39:c7:75:83:dc:0f:10:de:c0:d6
+      - checkout
+      - run: git subtree pull -m "Merge ${MSG}" --prefix=sources origin sources
+      - node/install-packages
+      - run: npm run build
+      - run: git add .
+      - run: git commit -m "Build "'#'"${CIRCLE_BUILD_NUM}"
+      - run: git push origin ${CIRCLE_BRANCH}
+
+workflows:
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
