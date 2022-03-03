@@ -1,0 +1,27 @@
+{
+    "name": "@noahtkeller/common-strings",
+    "description": "NodeJS strings for noahtkeller.github.io",
+    "version": "0.1.1",
+    "scripts": {
+        "build": "gulp",
+        "clean": "gulp clean"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noahtkeller/node-common-strings.git"
+    },
+    "homepage": "https://github.com/noahtkeller/node-common-strings",
+    "bugs": "https://github.com/noahtkeller/node-common-strings/issues",
+    "author": {
+        "name": "Noah Keller",
+        "email": "noahtkeller@gmail.com",
+        "url": "https://noahtkeller.github.io/"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "mkdirp": "^1.0.4",
+        "rimraf": "^3.0.2",
+        "yaml": "^1.10.2"
+    }
+}
