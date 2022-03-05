@@ -1,3 +1,4 @@
 secrets:
   salt: "secrets:salt"
 some: "other"
+foo: "bar"
