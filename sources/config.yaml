@@ -3,3 +3,4 @@ secrets:
 some: "other"
 foo: "bar"
 baz: "boo"
+ping: "pong"
