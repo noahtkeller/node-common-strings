@@ -1,0 +1,12 @@
+module.exports.config = require('./config');
+module.exports.config_secrets = require('./config/secrets');
+module.exports.icon_sources = require('./icon_sources');
+module.exports.system = require('./system');
+module.exports.i18n_keys = require('./i18n/keys');
+module.exports.i18n_keys_errors = require('./i18n/keys/errors');
+module.exports.i18n_keys_gh_pages = require('./i18n/keys/gh_pages');
+module.exports.i18n_keys_system = require('./i18n/keys/system');
+module.exports.i18n_bundles = require('./i18n/bundles');
+module.exports.i18n_bundles_errors = require('./i18n/bundles/errors');
+module.exports.i18n_bundles_gh_pages = require('./i18n/bundles/gh_pages');
+module.exports.i18n_bundles_system = require('./i18n/bundles/system');

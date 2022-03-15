@@ -1,0 +1,3 @@
+export const errors = {"en":{"bad_request":"Bad Request","not_found":"Not Found","user_not_found":"User Not Found","error_creating_user":"Error creating user","unknown_error":"Unknown Error","internal_server_error":"Internal Server Error"}};
+export const gh_pages = {"en":{"home_page_link_title":"Home","repos_page_link_title":"Repos","blog_page_link_title":"Blog","resume_page_link_title":"Resume","login_page_link_title":"Login","mxgd_link_title":"spam email","header_job_title":"Software Engineer","name":"Noah Keller"}};
+export const system = {"en":{"welcome":"This is the welcome message in English","hello":"Hello world","success":"Success"},"es":{"welcome":"This is the welcome message in Spanish","hello":"Hola mundo"}};
